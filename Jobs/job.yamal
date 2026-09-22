@@ -9,19 +9,19 @@ resources:
       tasks:
         - task_key: to_Bronze
           notebook_task:
-            notebook_path: /Workspace/Users/riey20112003@gmail.com/01_Landing_to_Bronze
+            notebook_path: /Workspace/Users/riey20112003@gmail.com/Landing_to_Bronze
             source: WORKSPACE
         - task_key: to_Silver
           depends_on:
             - task_key: to_Bronze
           notebook_task:
-            notebook_path: /Workspace/Users/riey20112003@gmail.com/02_Bronze_to_Silver
+            notebook_path: /Workspace/Users/riey20112003@gmail.com/Bronze_to_Silver
             source: WORKSPACE
         - task_key: to_Gold
           depends_on:
             - task_key: to_Silver
           notebook_task:
-            notebook_path: /Workspace/Users/riey20112003@gmail.com/03_Silver_to_Gold
+            notebook_path: /Workspace/Users/riey20112003@gmail.com/Silver_to_Gold
             source: WORKSPACE
       queue:
         enabled: true
